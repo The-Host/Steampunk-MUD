@@ -27,7 +27,7 @@ class BaseServer(object):
         self.timeout = 0.05
 
     def broadcast(self, msg):
-        """Sends a message, ``msg`` to all clients connected to the
+        """Sends a message, `msg`, to all clients connected to the
         server.
 
         :param msg: The message to send.
