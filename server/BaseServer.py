@@ -94,8 +94,7 @@ class BaseServer(object):
             timeout=self.timeout
         )
 
-        print((">> Listening for connections on "
-               "port {}.  CTRL-C to break.").format(self.port))
+        print(">> Listening for connections on port {}.".format(self.port))
 
         self.running = True
 
