@@ -26,4 +26,4 @@ For more information, please refer to <http://unlicense.org>
 -----------------------------------------------------------------------
 
 Miniaboa is licensed under the Apache License, Version 2.0. Please consult
-LICENSE.TXT located at ./miniboa/LICENSE.TXT.
+LICENSE.TXT located at ./libs/MINIBOA_LICENSE.txt.
