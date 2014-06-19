@@ -14,7 +14,8 @@ class GameServer(server.BaseServer):
         self.broadcast('{} left\n.'.format(client.addrport()))
 
     def process_client(self, client):
-        pass
+        message = client.get_command().lower()
+        self.broadcast('{0}-> {1}\n'.format(client.addrport(), message))
 
 
 if __name__ == '__main__':
