@@ -1,20 +1,24 @@
-class Player():
-    def __init__(self, playerHealth, playerMana):
-        self.playerHealth = playerHealth
-        self.playerMana = playerMana
+class Player:
+    def __init__(self, player_health, player_mana):
+        self.__health = player_health
+        self.__mana = player_mana
 
-    def getHealth(self):
+    @property
+    def health(self):
         """Returns current player health"""
-        return self.playerHealth
+        return self.__health
 
-    def getMana(self):
+    @property
+    def mana(self):
         """Returns current player mana"""
-        return self.playerMana
+        return self.__health
 
-    def setHealth(self, value):
+    @health.setter
+    def health(self, value):
         """Sets new player health"""
-        self.playerHealth = value
+        self.__health = value
 
-    def setMana(self, value):
+    @mana.setter
+    def mana(self, value):
         """Sets new player mana"""
-        self.playerMana = value
+        self.__mana = value
