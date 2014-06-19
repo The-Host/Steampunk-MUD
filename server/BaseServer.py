@@ -4,11 +4,11 @@ from libs.miniboa import TelnetServer
 class BaseServer(object):
     """Base class for a telnet server."""
 
-    def __init__(self, address='127.0.0.1', port=7777, idle_timeout=300):
+    def __init__(self, address='', port=7777, idle_timeout=300):
         """Initializer for `BaseServer`.
 
         :param address: bytes Host address. For a local-only server
-        use 127.0.0.1 and for an externally visable server use ''
+        use 127.0.0.1 and for an externally visible server use ''
         or your outgoing IP address (ex. 192.168.1.3).
 
         :param port: int Port on which to listen for incoming
