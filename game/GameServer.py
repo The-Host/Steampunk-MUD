@@ -11,7 +11,7 @@ class GameServer(server.BaseServer):
 
     def on_disconnect(self, client):
         super().on_disconnect(client)
-        self.broadcast('{} left.'.format(client.addrport()))
+        self.broadcast('{} left\n.'.format(client.addrport()))
 
     def process_client(self, client):
         pass
