@@ -20,5 +20,4 @@ class GameServer(server.BaseServer):
 
 
 if __name__ == '__main__':
-    mud = GameServer()
-    mud.start()
+    pass
